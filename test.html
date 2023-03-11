@@ -1,0 +1,1009 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!-- <base href="http://localhost/laforce/"> -->
+    <base href="https://toanngocdoan.000webhostapp.com/">
+    <!-- <base href="http://php0522e-1.itpsoft.com.vn/"> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laforce</title>
+    
+    <link rel="icon shortcut" href="./image/logo/icon-shortcut-logo.png">
+
+    <!-- library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" 
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    
+    <!-- toastr -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet"/>
+
+    <!-- css -->
+    <!--<link rel="stylesheet" href="./font-awesome/css/all.css">-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <!-- Rate ting -->
+    <link rel="stylesheet" type="text/css" href="./css/star-rating-svg.css"></head>
+<body>
+    <!-- header -->
+    <header id="header" class="header">
+    <div class="container-fluid">
+        <div class="header-inner alg-center jtf-between d-flex ">
+            <!-- logo -->
+            <div class="icon-menu-respon">
+                <span>
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+            </div>
+            <div class="icon-logo ml-60">
+                <a href="trang-chu">
+                    <img src="./image/logo/logo.png" alt="">
+                </a>
+            </div>
+            <div class="box-list-menu-header">
+                <div class="icon-close-menu-respon">
+                    <span>
+                        <i class="fa-solid fa-xmark"></i>
+                    </span>
+                </div>
+                <ul class="custom-nav list-menu-header d-flex"> 
+                    <li class="active">
+                        <a href="trang-chu">Trang chủ</a>
+                    </li>
+                    <li class="">
+                        <div class="d-flex alg-center jtf-between">
+                            <a href="danh-muc">Danh mục</a>
+                            <div class="icon-mini-menu">
+                                <span>
+                                    <i class="fa-solid fa-plus"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <ul class="custom-nav mini-box-list-menu">
+                            <!-- giầy nam -->
+                            <li class="menu-item-has-children">
+                                <a href="san-pham/giay-luoi/1"></a>
+                                <ul class="custom-nav sub-menu">
+                                    <li>
+                                        <a href="san-pham/giay-luoi/1">Giày lười nam</a>
+                                    </li>
+                                    <li>
+                                        <a href="san-pham/giay-tay/1">Giày tây nam</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>       
+                    <li class="">
+                        <a href="gioi-thieu">Giới thiệu</a>
+                    </li>
+                    <li class="">
+                        <a href="lien-he">Liên hệ</a>
+                    </li>
+                    <li class="">
+                        <a href="tin-tuc">Tin tức</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#">Đăng ký đại lý</a>
+                    </li> -->
+                </ul>
+            </div>  
+            <div class="box-cart_search d-flex mr-60">
+                <!-- cart -->
+                <div class="box-icon-cart mr-15 cart-order">
+                    <div class="icon-cart">
+                        <a href="gio-hang">
+                            <span>
+                                <span>
+                                    <i class="fa-solid fa-bag-shopping"></i>
+                                </span>
+                                                                <span class="count count-order">0</span>
+                            </span>
+                            
+                        </a>
+                    </div>
+                    
+                    <div class="list-cart">
+                        <!-- title -->
+                                                <div class="title-cart">
+                            <span>Đơn hàng (0 sản phẩm)</span>
+                        </div>
+                        <!-- list-product-cart -->
+                        <ul class="custom-nav box-mini-cart">
+                                                    </ul>
+                        <!-- total money -->
+                        <div class="total-money-cart d-flex alg-center jtf-between mb-15">
+                            <div class="text-total-money">
+                                <span>Tổng số tiền cần thanh toán:</span>
+                            </div>
+                            <div class="price-product-in-cart">
+                                <span>  </span>
+                            </div>
+                        </div>
+                        <!-- pay-cart -->
+                        <div class="btn-pay-cart">
+                            <a href="gio-hang">
+                                <button>
+                                    <span>Thanh toán</span>
+                                </button>
+                            </a>
+                            <div class="continue-shopping">
+                                <a href="san-pham/giay-tay">Tiếp tục mua hàng</a>
+                            </div>
+                        </div>
+                                                
+                    </div>
+                </div>
+                <!-- search -->
+                <div class="box-icon-search ml-15">
+                        <div class="icon-search">
+                            <span> 
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                        </div>
+                        <div class="form-inp-search">
+                            <!-- <form action=""> -->
+                                <div class="inp-search">
+                                    <input type="text" name="inp-search" class="search_product" placeholder="Nhập tên sản phẩm cần tìm ..." autocomplete="off">
+                                </div>
+                                <!-- <div class="btn-search-header">
+                                    <button type="submit" class="btn_search_product">Tìm </button>
+                                </div> -->
+                            <!-- </form> -->
+                            <div class="search-suggestions">
+                                <ul class="custom-nav list-search-suggestions">
+                                
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</header>    
+    <!-- banner -->
+<section class="banner">
+    <div class="img-banner">
+        <img src="./image/banner/banner-index.jpg" alt="">
+    </div>
+    <div class="content-banner">
+        <div class="note-title-banner">
+            <span>New collection</span>
+        </div>
+        <div class="title-banner mb-60">
+            <span>Summer - Autumn Lookbook 2022</span>
+        </div>
+        <div class="mini-note-title-banner">
+            <span>How to be a gentleman</span>
+        </div>
+        <div class="text-banner">
+            <span>Ấn tượng, lịch lãm và đầy nam tính cùng với những xu hướng phụ kiện Hè Thu 2022 của LaForce</span>
+        </div>
+    </div>
+</section>
+
+<!-- product -->
+<section class="product d-flex">
+    <!-- left -->
+    <div class="box-product">
+        <div class="box-content-product color-box-left" >
+            <a href="index.php?page=product&method=western">
+                <div class="img-product d-flex jtf-center">
+                    <img src="./image/index-product (1).png" alt="">
+                </div>
+                <div class="text-img-product">
+                    <h2>Giày da nam</h2>
+                    <p>230 sản phẩm</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- right -->
+    <div class="box-product box-product-right">
+        <!-- 1 -->
+        <div class="box-content-product">
+            <a href="./list-detail-product.html">
+                <div class="img-product d-flex jtf-center">
+                    <img src="./image/index-product (2).png" alt="">
+                </div>
+                <div class="text-img-product">
+                    <h2>Ví da nam</h2>
+                    <p>230 sản phẩm</p>
+                </div>
+            </a>
+        </div>
+        <!-- 2 -->
+        <div class="box-content-product color-box-right-gray">
+            <a href="./list-detail-product.html">
+                <div class="img-product d-flex jtf-center">
+                    <img src="./image/index-product (3).png" alt="">
+                </div>
+                <div class="text-img-product">
+                    <h2>Túi xách nam</h2>
+                    <p>230 sản phẩm</p>
+                </div>
+            </a>
+        </div>
+        <!-- 3 -->
+        <div class="box-content-product color-box-right-gray">
+            <a href="./list-detail-product.html">
+                <div class="img-product d-flex jtf-center">
+                    <img src="./image/index-product (4).png" alt="">
+                </div>
+                <div class="text-img-product">
+                    <h2>Thắt lưng nam</h2>
+                    <p>230 sản phẩm</p>
+                </div>
+            </a>
+        </div>
+        <!-- 4 -->
+        <div class="box-content-product color-box-right-green">
+            <a href="index.php?page=category">
+                <div class="text-img-product-seen-more">
+                    <h3>xem thêm</h3>
+                    <h3>các sản phẩm khác</h3>
+                    <span>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </span>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- about-the-product -->
+<section class="about-the-product">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="widget-title d-flex jtf-between">
+                    <span>01</span>
+                    <span>Về sản phẩm</span>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="box-text-content">
+                    <div class="note-text-content">
+                        <span>Về chất liệu</span>
+                        <p>Chất liệu da nguyên tấm</p>
+                    </div>
+                    <div class="text-content">
+                        <p>Tất cả các sản phẩm của LaForce được làm từ chất liệu da nguyên tấm, đây là phần da đắt tiền nhất lấy từ lớp da trên cùng của con bò, giữ lại được tất cả kết cấu nguyên thủy của da, mang đến chất lượng tốt nhất, chính vì thế chúng rất bền và khó bị hỏng.</p>
+                        <p>Đó cũng là điểm khác biệt lớn nhất trong sản phẩm của LaForce so với các sản phẩm làm bằng da thông thường khác. Đối với những sản phẩm da thông thường, bề mặt chúng được phủ lên một lớp da tổng hợp nên rất dễ bị nổ hoặc gấp nếp.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="img-about-the-product">
+                    <img src="./image/chatlieuda.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 1 -->
+<section class="about-the-product quytrinh_home">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="img-about-the-product">
+                    <img src="./image/cach-tao-ra-sp.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="box-text-content">
+                    <div class="note-text-content txt-right">
+                        <span>QUY TRÌNH</span>
+                        <p>Cách tạo ra 1 sản phẩm</p>
+                    </div>
+                    <div class="text-content">
+                        <p>Chế tạo những sản phẩm từ da nguyên tấm là cả một nghệ thuật. Chúng được áp dụng những kĩ thuật truyền thống kết hợp với công nghệ hiện đại nhất. Cả quá trình được diễn ra khép kín và không hề có ảnh hưởng từ môi trường bên ngoài. Khi sản phẩm đã được chế xuất, chúng sẽ được hoàn thiện thông qua bàn tay khéo léo của những người thợ có kinh nghiệm lâu năm. Chính vì thế, bạn có thể cảm nhận rõ được chất liệu của sản phẩm qua những đặc tính của sản phẩm như màu sắc ẩn sâu bên trong sản phẩm, khác với những đồ da rẻ tiền.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="line-content-about-product">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 2 -->
+<section class="about-the-product quytrinh_home">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="line-content-about-product">
+                    <span></span>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="box-text-content">
+                    <div class="note-text-content">
+                        <span>Sản phẩm</span>
+                        <p>Thiết kế độc đáo —sáng tạo</p>
+                    </div>
+                    <div class="text-content">
+                        <p>LaForce mang đến cho người dùng những trải nghiệm tuyệt vời về các sản phẩm. Thiết kế độc đáo và đầy sáng tạo làm nổi bật tính cách của sản phẩm khiến bất cứ khách hàng nào cũng muốn sở hữu. Những ý tưởng thiết kế tuyệt vời được phối hợp nhuần nhuyễn qua bàn tay của những thợ thủ công có nhiều năm kinh nghiệm cùng với những chất liệu xa xỉ, cao cấp để tạo ra những sản phẩm không những chỉ tốt về chất lượng mà còn hợp thời trang, thẩm mỹ của người dùng.</p>
+                        <p>LaForce luôn cập nhật, phát triển theo xu hướng thời trang thế giới nhưng vẫn luôn giữ lại những nét đẹp trong thiết kế để tạo cho khách hàng những sản phẩm không chỉ sang trọng, đẳng cấp mà còn hợp thời trang, có tính thẩm mỹ.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="img-about-the-product">
+                    <img src="./image/Thiet-ke-sang-tao.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- about-the-La-forcet -->
+<section class="about-the-La-force">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="widget-title d-flex jtf-between">
+                    <span>02</span>
+                    <span>Về La-force</span>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="box-text-content">
+                    <div class="note-text-content txt-right ">
+                        <p>Chất liệu 100% da bò nhập khẩu</p>
+                    </div>
+                    <div class="text-content">
+                        <p>LaForce với hệ thống 23 cửa hàng trên toàn quốc và tiếp tục mở rộng trong tương lai, chúng tôi mong muốn sẽ mang đến những sản phẩm đồ da chất lượng nhất cho khách hàng.</p>
+                        <p>LaForce – sản phẩm đồ da của người Việt.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- look-book -->
+<section class="look-book">
+    <div class="title-lookbook">
+        <a href="#">
+            <span>LOOKBOOK</span>
+        </a>
+    </div>
+    <div class="slider-look-book">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!-- 1 -->
+                <div class="swiper-slide">
+                    <div class="img-lookbook">
+                        <a href="#">
+                            <img src="./image/produc-detail/lookbook-product (1).png" alt="">
+                            <div class="text-img-lookbook">
+                                <span>All Bags Collection for Men in 2022</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="swiper-slide">
+                    <div class="img-lookbook">
+                        <a href="#">
+                            <img src="./image/produc-detail/lookbook-product (2).png" alt="">
+                            <div class="text-img-lookbook">
+                                <span>All Bags Collection for Men in 2022</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="swiper-slide">
+                    <div class="img-lookbook">
+                        <a href="#">
+                            <img src="./image/produc-detail/lookbook-product (3).png" alt="">
+                            <div class="text-img-lookbook">
+                                <span>All Bags Collection for Men in 2022</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="swiper-slide">
+                    <div class="img-lookbook">
+                        <a href="#">
+                            <img src="./image/produc-detail/lookbook-product (4).png" alt="">
+                            <div class="text-img-lookbook">
+                                <span>All Bags Collection for Men in 2022</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+</section>
+
+<!-- feedback -->
+<section class="feedback">
+    <div class="box-feedback d-flex jtf-between ">
+        <!-- left -->
+        <div class="box-feedback-left">
+            <div class="title-feedback">
+                <span>Đánh giá từ</span>
+                <h3>Khách hàng</h3>
+            </div>
+            <div class="text-feedback">
+                <p>+ 35,243</p>
+                <span>Hàng nghìn khách hàng đã tin tưởng và ủng hộ sản phẩm của laforce</span>
+            </div>
+        </div>
+        <!-- right -->
+        <div class="box-feedback-right">
+            <div class="slider-feedback">
+                <div class="swiper mySwiper-feedback">
+                    <div class="swiper-wrapper">
+                        <!-- 1 -->
+                        <div class="swiper-slide">
+                            <div class="box-customer-comment">
+                                <div class="ava-customer">
+                                    <img src="./image/produc-detail/ava-customer (1).png" alt="">
+                                </div>
+                                <div class="comment-customer">
+                                    <div class="author">
+                                        <span class="name-author">DV Tiến Lộc</span>
+                                        <span class="assess"> đã đánh giá </span>
+                                    </div>
+                                    <div class="content-comment">
+                                        <p>"LaForce đáp ứng đủ các tiêu chí của mình như chất liệu da nhập khẩu, thiết kế theo chuẩn Châu Âu, … nên những năm qua mình sử dụng sản phẩm của LaForce khá thường xuyên"</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="swiper-slide">
+                            <div class="box-customer-comment">
+                                <div class="ava-customer">
+                                    <img src="./image/produc-detail/ava-customer (2).png" alt="">
+                                </div>
+                                <div class="comment-customer">
+                                    <div class="author">
+                                        <span class="name-author">DV Tiến Lộc</span>
+                                        <span class="assess"> đã đánh giá </span>
+                                    </div>
+                                    <div class="content-comment">
+                                        <p>"LaForce đáp ứng đủ các tiêu chí của mình như chất liệu da nhập khẩu, thiết kế theo chuẩn Châu Âu, … nên những năm qua mình sử dụng sản phẩm của LaForce khá thường xuyên"</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="swiper-slide">
+                            <div class="box-customer-comment">
+                                <div class="ava-customer">
+                                    <img src="./image/produc-detail/ava-customer (1).png" alt="">
+                                </div>
+                                <div class="comment-customer">
+                                    <div class="author">
+                                        <span class="name-author">DV Tiến Lộc</span>
+                                        <span class="assess"> đã đánh giá </span>
+                                    </div>
+                                    <div class="content-comment">
+                                        <p>"LaForce đáp ứng đủ các tiêu chí của mình như chất liệu da nhập khẩu, thiết kế theo chuẩn Châu Âu, … nên những năm qua mình sử dụng sản phẩm của LaForce khá thường xuyên"</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 4 -->
+                        <div class="swiper-slide">
+                            <div class="box-customer-comment">
+                                <div class="ava-customer">
+                                    <img src="./image/produc-detail/ava-customer (2).png" alt="">
+                                </div>
+                                <div class="comment-customer">
+                                    <div class="author">
+                                        <span class="name-author">DV Tiến Lộc</span>
+                                        <span class="assess"> đã đánh giá </span>
+                                    </div>
+                                    <div class="content-comment">
+                                        <p>"LaForce đáp ứng đủ các tiêu chí của mình như chất liệu da nhập khẩu, thiết kế theo chuẩn Châu Âu, … nên những năm qua mình sử dụng sản phẩm của LaForce khá thường xuyên"</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next next-feedback"></div>
+                <div class="swiper-button-prev prev-feedback"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- news -->
+<section class="news">
+    <div class="container">
+        <div class="title-box-news">
+            <a href="">
+                <span>BÁO CHÍ NÓI VỀ LAFORCE</span>
+            </a>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="box-content-news">
+                    <a href="index.php?page=detail_news">
+                        <div class="img-content-news">
+                            <img src="./image/news/news (1).png" alt="">
+                        </div>
+                        <div class="name-content-new">
+                            <span>Sao nam Việt bật mí địa chỉ thời trang yêu thích</span>
+                        </div>
+                        <div class="seen-more">
+                            <span>Xem thêm</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="box-content-news">
+                    <a href="index.php?page=detail_news">
+                        <div class="img-content-news">
+                            <img src="./image/news/news (2).png" alt="">
+                        </div>
+                        <div class="name-content-new">
+                            <span>Sao nam Việt bật mí địa chỉ thời trang yêu thích</span>
+                        </div>
+                        <div class="seen-more">
+                            <span>Xem thêm</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="box-content-news">
+                    <a href="index.php?page=detail_news">
+                        <div class="img-content-news">
+                            <img src="./image/news/news (3).png" alt="">
+                        </div>
+                        <div class="name-content-new">
+                            <span>Sao nam Việt bật mí địa chỉ thời trang yêu thích</span>
+                        </div>
+                        <div class="seen-more">
+                            <span>Xem thêm</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="box-content-news">
+                    <a href="index.php?page=detail_news">
+                        <div class="img-content-news">
+                            <img src="./image/news/news (4).png" alt="">
+                        </div>
+                        <div class="name-content-new">
+                            <span>Sao nam Việt bật mí địa chỉ thời trang yêu thích</span>
+                        </div>
+                        <div class="seen-more">
+                            <span>Xem thêm</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>  
+</section>    
+
+    <!-- mini-footer -->
+    <!-- footer -->
+    <section class="mini-footer">
+    <div class="container">
+        <div class="box-icon-mini-footer">
+            <!-- 1 -->
+            <div class="icon-mini-footer d-flex alg-center">
+                <div class="img-icon">
+                    <img src="./image/icon/icon_security.png" alt="">
+                </div>
+                <div class="text-mini-footer ml-15">
+                    <span>Chất liệu 100% da thật</span>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="icon-mini-footer d-flex alg-center">
+                <div class="img-icon">
+                    <img src="./image/icon/icon_baohanh.png" alt="">
+                </div>
+                <div class="text-mini-footer ml-15">
+                    <span>Chất liệu 100% da thật</span>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="icon-mini-footer d-flex alg-center">
+                <div class="img-icon">
+                    <img src="./image/icon/icon_car.png" alt="">
+                </div>
+                <div class="text-mini-footer ml-15">
+                    <span>Chất liệu 100% da thật</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="footer" class="footer">
+    <div class="footer-address">
+        <div class="container">
+            <div class="row">
+                <!-- Ha Noi  -->
+                <div class="col-md-3">
+                    <div class="box-content-address">
+                        <div class="title-address">
+                            <span>Hà Nội</span>
+                        </div>
+                        <div class="list-address">
+                            <!-- 1 -->
+                            <div class="list_list">
+                                <div class="title">
+                                    <a rel="nofollow" href="https://goo.gl/maps/Biicy4e93Zqy97xr6">
+                                        <label class="number">1</label>
+                                        <span>58 Phố Huế</span> 
+                                        <p>Q. Hai Bà Trưng</p> 
+                                        <p>Hotline: 024.2023.2666</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- 2 -->
+                            <div class="list_list">
+                                <div class="title">
+                                    <a rel="nofollow" href="https://goo.gl/maps/Biicy4e93Zqy97xr6">
+                                        <label class="number">1</label>
+                                        <span>58 Phố Huế</span> 
+                                        <p>Q. Hai Bà Trưng</p> 
+                                        <p>Hotline: 024.2023.2666</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- 3 -->
+                            <div class="list_list">
+                                <div class="title">
+                                    <a rel="nofollow" href="https://goo.gl/maps/Biicy4e93Zqy97xr6">
+                                        <label class="number">1</label>
+                                        <span>58 Phố Huế</span> 
+                                        <p>Q. Hai Bà Trưng</p> 
+                                        <p>Hotline: 024.2023.2666</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- 4 -->
+                            <div class="list_list">
+                                <div class="title">
+                                    <a rel="nofollow" href="https://goo.gl/maps/Biicy4e93Zqy97xr6">
+                                        <label class="number">1</label>
+                                        <span>58 Phố Huế</span> 
+                                        <p>Q. Hai Bà Trưng</p> 
+                                        <p>Hotline: 024.2023.2666</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ho Chi Minh -->
+                <div class="col-md-3">
+                    <div class="box-content-address">
+                        <div class="title-address">
+                            <span>Hồ Chí Minh</span>
+                        </div>
+                        <div class="list-address">
+                            <!-- 1 -->
+                            <div class="list_list">
+                                <div class="title">
+                                    <a rel="nofollow" href="https://goo.gl/maps/Biicy4e93Zqy97xr6">
+                                        <label class="number">1</label>
+                                        <span>58 Phố Huế</span> 
+                                        <p>Q. Hai Bà Trưng</p> 
+                                        <p>Hotline: 024.2023.2666</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- 2 -->
+                            <div class="list_list">
+                                <div class="title">
+                                    <a rel="nofollow" href="https://goo.gl/maps/Biicy4e93Zqy97xr6">
+                                        <label class="number">1</label>
+                                        <span>58 Phố Huế</span> 
+                                        <p>Q. Hai Bà Trưng</p> 
+                                        <p>Hotline: 024.2023.2666</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- 3 -->
+                            <div class="list_list">
+                                <div class="title">
+                                    <a rel="nofollow" href="https://goo.gl/maps/Biicy4e93Zqy97xr6">
+                                        <label class="number">1</label>
+                                        <span>58 Phố Huế</span> 
+                                        <p>Q. Hai Bà Trưng</p> 
+                                        <p>Hotline: 024.2023.2666</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- 4 -->
+                            <div class="list_list">
+                                <div class="title">
+                                    <a rel="nofollow" href="https://goo.gl/maps/Biicy4e93Zqy97xr6">
+                                        <label class="number">1</label>
+                                        <span>58 Phố Huế</span> 
+                                        <p>Q. Hai Bà Trưng</p> 
+                                        <p>Hotline: 024.2023.2666</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- other provinces -->
+                <div class="col-md-6">
+                    <div class="box-content-address">
+                        <div class="title-address">
+                            <span>Tỉnh thành khác</span>
+                            <span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </span>
+                        </div>
+                        <div class="list-address list-other-provinces">
+                            <!-- 1 -->
+                            <div class="list_list">
+                                <div class="title">
+                                    <a rel="nofollow" href="https://goo.gl/maps/Biicy4e93Zqy97xr6">
+                                        <label class="number">1</label>
+                                        <span>58 Phố Huế</span> 
+                                        <p>Q. Hai Bà Trưng</p> 
+                                        <p>Hotline: 024.2023.2666</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- 2 -->
+                            <div class="list_list">
+                                <div class="title">
+                                    <a rel="nofollow" href="https://goo.gl/maps/Biicy4e93Zqy97xr6">
+                                        <label class="number">1</label>
+                                        <span>58 Phố Huế</span> 
+                                        <p>Q. Hai Bà Trưng</p> 
+                                        <p>Hotline: 024.2023.2666</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- 3 -->
+                            <div class="list_list">
+                                <div class="title">
+                                    <a rel="nofollow" href="https://goo.gl/maps/Biicy4e93Zqy97xr6">
+                                        <label class="number">1</label>
+                                        <span>58 Phố Huế</span> 
+                                        <p>Q. Hai Bà Trưng</p> 
+                                        <p>Hotline: 024.2023.2666</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- 4 -->
+                            <div class="list_list">
+                                <div class="title">
+                                    <a rel="nofollow" href="https://goo.gl/maps/Biicy4e93Zqy97xr6">
+                                        <label class="number">1</label>
+                                        <span>58 Phố Huế</span> 
+                                        <p>Q. Hai Bà Trưng</p> 
+                                        <p>Hotline: 024.2023.2666</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- 5 -->
+                            <div class="list_list">
+                                <div class="title">
+                                    <a rel="nofollow" href="https://goo.gl/maps/Biicy4e93Zqy97xr6">
+                                        <label class="number">1</label>
+                                        <span>58 Phố Huế</span> 
+                                        <p>Q. Hai Bà Trưng</p> 
+                                        <p>Hotline: 024.2023.2666</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- 6 -->
+                            <div class="list_list">
+                                <div class="title">
+                                    <a rel="nofollow" href="https://goo.gl/maps/Biicy4e93Zqy97xr6">
+                                        <label class="number">1</label>
+                                        <span>58 Phố Huế</span> 
+                                        <p>Q. Hai Bà Trưng</p> 
+                                        <p>Hotline: 024.2023.2666</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- 7 -->
+                            <div class="list_list">
+                                <div class="title">
+                                    <a rel="nofollow" href="https://goo.gl/maps/Biicy4e93Zqy97xr6">
+                                        <label class="number">1</label>
+                                        <span>58 Phố Huế</span> 
+                                        <p>Q. Hai Bà Trưng</p> 
+                                        <p>Hotline: 024.2023.2666</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- 8 -->
+                            <div class="list_list">
+                                <div class="title">
+                                    <a rel="nofollow" href="https://goo.gl/maps/Biicy4e93Zqy97xr6">
+                                        <label class="number">1</label>
+                                        <span>58 Phố Huế</span> 
+                                        <p>Q. Hai Bà Trưng</p> 
+                                        <p>Hotline: 024.2023.2666</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-main">
+        <div class="container">
+            <!-- footer-over -->
+            <div class="footer-over d-flex jtf-between">
+                <!-- hotline -->
+                <div class="hotline-footer">
+                    <div class="icon-logo-footer">
+                        <img src="./image/logo/logo-footer.png" alt="">
+                    </div>
+                    <p>
+                        <span>Hotline:</span>
+                    </p>
+                    <p>
+                        <a href="tel:1900 2033">
+                            <strong>1900 2033</strong>
+                        </a>
+                    </p>
+                </div>
+                <!-- genera-info -->
+                <div class="genera-info ">
+                    <div class="title-main-footer">
+                        <span>Thông tin chung</span>
+                    </div>
+                    <div class="box-menu-genera-info">
+                        <ul class="menu-genera-info menu-footer">
+                            <li>
+                                <a href="#">Chính sách bảo hành</a>
+                            </li>
+                            <li>
+                                <a href="#">Quy định đổi trả sản phẩm</a>
+                            </li>
+                            <li>
+                                <a href="#">Chính sách bảo mật</a>
+                            </li>
+                            <li>
+                                <a href="#">Điều kiện giao dịch chung</a>
+                            </li>
+                            <li>
+                                <a href="#">Hệ thống cửa hàng</a>
+                            </li>
+                            <li>
+                                <a href="#">Đăng ký đại lý</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- tutorial -->
+                <div class="tutorial">
+                    <div class="title-main-footer">
+                        <span>Hướng dẫn mua hàng</span>
+                    </div>
+                    <div class="box-menu-genera-info">
+                        <ul class="custom-nav menu-footer">
+                            <li>
+                                <a href="#">Chính sách bảo hành</a>
+                            </li>
+                            <li>
+                                <a href="#">Quy định đổi trả sản phẩm</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- contact -->
+                <div class="contact-footer">
+                    <div class="title-main-footer">
+                        <span>Kết nối với chúng tôi</span>
+                    </div>
+                    <div class="box-menu-genera-info">
+                        <ul class="custom-nav menu-footer menu-contact-footer">
+                            <li>
+                                <a href="https://www.facebook.com/" target="_blank">
+                                    <span>
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </span>
+                                    <span>Facebook</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.twitter.com/" target="_blank">
+                                    <span>
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </span>
+                                    <span>Twitter</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/" target="_blank">
+                                    <span>
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </span>
+                                    <span>Youtube</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" target="_blank">
+                                    <span>
+                                        <i class="fa-brands fa-square-instagram"></i>
+                                    </span>
+                                    <span>Instagram</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- footer-under -->
+            <div class="footer-under">
+                <div class="box-copyright">
+                    <img src="./image/logo/bocongthuong.png" alt="">
+                    <span> @2022 All rights reserved Laforce</span>
+                </div>
+                <div class="contact-address-footer">
+                    <p>CÔNG TY TNHH LAFORCE VIỆT NAM</p>
+                    <p>Địa chỉ: Số 129 Cầu Giấy, Phường Quan Hoa, Quận Cầu Giấy, Thành Phố Hà Nội, Việt Nam</p>
+                    <p>Mã số doanh nghiệp: 0106156656</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <a title="back to top" id="back-top"></a>
+
+    <a title="back to top" id="back-top"></a>
+
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./js/jquery-3.6.0.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/slider.js"></script>
+<script src="./js/back-to-top.js"></script>
+
+<!-- toastr -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<script src="./js/toastr.js"></script>
+
+<!-- Xử lý ajax -->
+<script src="./js/ajax-process.js"></script>
+
+<!-- Rateting -->
+<script src="./js/star-rating-svg.js"></script>
+<div style="text-align:right;position:fixed;z-index:9999999;bottom:0;width:auto;right:1%;cursor:pointer;line-height:0;display:block!important"><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&utm_campaign=000_logo&utm_medium=website&utm_content=footer_img"><img src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png" alt="www.000webhost.com"></a></div><script>function getCookie(t){for(var e=t+"=",n=decodeURIComponent(document.cookie).split(";"),o=0;o<n.length;o++){for(var i=n[o];" "==i.charAt(0);)i=i.substring(1);if(0==i.indexOf(e))return i.substring(e.length,i.length)}return""}getCookie("hostinger")&&(document.cookie="hostinger=;expires=Thu, 01 Jan 1970 00:00:01 GMT;",location.reload());var wordpressAdminBody=document.getElementsByClassName("wp-admin")[0],notification=document.getElementsByClassName("notice notice-success is-dismissible"),hostingerLogo=document.getElementsByClassName("hlogo"),mainContent=document.getElementsByClassName("notice_content")[0];if(null!=wordpressAdminBody&&0<notification.length&&null!=mainContent){var googleFont=document.createElement("link");googleFontHref=document.createAttribute("href"),googleFontRel=document.createAttribute("rel"),googleFontHref.value="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700",googleFontRel.value="stylesheet",googleFont.setAttributeNode(googleFontHref),googleFont.setAttributeNode(googleFontRel);var css="@media only screen and (max-width: 576px) {#main_content {max-width: 320px !important;} #main_content h1 {font-size: 30px !important;} #main_content h2 {font-size: 40px !important; margin: 20px 0 !important;} #main_content p {font-size: 14px !important;} #main_content .content-wrapper {text-align: center !important;}} @media only screen and (max-width: 781px) {#main_content {margin: auto; justify-content: center; max-width: 445px;}} @media only screen and (max-width: 1325px) {.web-hosting-90-off-image-wrapper {position: absolute; max-width: 95% !important;} .notice_content {justify-content: center;} .web-hosting-90-off-image {opacity: 1;}} @media only screen and (min-width: 769px) {.notice_content {justify-content: space-between;} #main_content {margin-left: 5%; max-width: 445px;} .web-hosting-90-off-image-wrapper {position: absolute; display: flex; justify-content: center; width: 50%; margin-left: 45%;}} .web-hosting-90-off-image {max-width: 90%;} .content-wrapper {min-height: 454px; display: flex; flex-direction: column; justify-content: center; z-index: 5} .notice_content {display: flex; align-items: center;} * {-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;} .upgrade_button_red_sale{box-shadow: 0 2px 4px 0 rgba(255, 69, 70, 0.2); width: 264px; border: 0; border-radius: 3px; background-color: #FF5C62 !important; padding: 15px 55px !important; font-family: 'Roboto', sans-serif; font-size: 16px; font-weight: 600; color: #ffffff;} .upgrade_button_red_sale:hover{color: #ffffff !important; background: #d10303 !important;}",style=document.createElement("style"),sheet=window.document.styleSheets[0];style.styleSheet?style.styleSheet.cssText=css:style.appendChild(document.createTextNode(css)),document.getElementsByTagName("head")[0].appendChild(style),document.getElementsByTagName("head")[0].appendChild(googleFont);var button=document.getElementsByClassName("upgrade_button_red")[0],link=button.parentElement;link.setAttribute("href","https://www.hostinger.com/hosting-starter-offer?utm_source=000webhost&utm_medium=panel&utm_campaign=000-wp"),link.innerHTML='<button class="upgrade_button_red_sale">Claim Deal</button>',(notification=notification[0]).setAttribute("style","padding-bottom: 0; padding-top: 5px; background-color: #040713; background-size: cover; background-repeat: no-repeat; color: #ffffff; border-left-color: #040713;"),notification.className="notice notice-error is-dismissible";var mainContentHolder=document.getElementById("main_content");mainContentHolder.setAttribute("style","padding: 0;"),hostingerLogo[0].remove();var h1Tag=notification.getElementsByTagName("H1")[0];h1Tag.className="000-h1",h1Tag.innerHTML="Black Friday",h1Tag.setAttribute("style",'color: white; font-family: "Roboto", sans-serif; font-size: 48px; font-weight: 700;');var h2Tag=document.createElement("H2");h2Tag.innerHTML="Up to 90% off 4-year hosting plans + free domain, SSL & DDoS protection",h2Tag.setAttribute("style",'color: white; margin: 10px 0 15px 0; font-family: "Roboto", sans-serif; font-size: 16px; font-weight: 400; line-height: 1;'),h1Tag.parentNode.insertBefore(h2Tag,h1Tag.nextSibling);var paragraph=notification.getElementsByTagName("p")[0];paragraph.innerHTML="$<span style='font-size: 80px;'>2.49</span>/mo",paragraph.setAttribute("style",'font-family: "Roboto", sans-serif; font-size: 48px; font-weight: 700; margin: 0;');var list=notification.getElementsByTagName("UL")[0];list.remove();var org_html=mainContent.innerHTML,new_html='<div class="content-wrapper">'+mainContent.innerHTML+'</div><div class="web-hosting-90-off-image-wrapper"><img class="web-hosting-90-off-image" src="https://cdn.000webhost.com/000webhost/promotions/bf-2022-bottom-banner.png"></div>';mainContent.innerHTML=new_html;var saleImage=mainContent.getElementsByClassName("web-hosting-90-off-image")[0]}</script></body>
+</html>
