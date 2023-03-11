@@ -7,7 +7,18 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.active {
+    background-color: #ff9a33 !important;
+    color: #fff !important;
+}
 /* Header */
+
+header {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    height: auto;
+}
 
 #header_top,
 #header_bottom {
@@ -31,11 +42,23 @@ a {
 .list-info li a {
     font-size: 14px;
     padding: 5px 0;
-    /* color: #fff; */
+    color: #fff;
+}
+
+.list-info li a i {
+    margin-right: 10px;
 }
 
 
 /*  */
+
+.menu_left ul li a {
+    font-size: 16px;
+}
+
+.menu_left ul li a:hover {
+    color: #ff9a33;
+}
 
 .button_all {
     box-shadow: 0px 0px 36px -13px rgba(0, 0, 0, 0.75);
@@ -45,6 +68,12 @@ a {
     display: inline-block;
     border: solid 2px #ffffff;
     font-weight: bold;
+    padding: 10px 30px 10px 30px;
+}
+
+.button_all:hover {
+    color: #fff;
+    background-color: #666666;
 }
 
 .header_bottom_left .logo {
@@ -64,3 +93,111 @@ a {
 .header_bottom_right ul .li_button a{
     padding: 12px 30px;
 }
+
+
+/* Main slide */
+
+#main-slide {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+#main-slide .carousel .carousel-item img {
+    background-size: cover;
+    /* max-height: 1000px; */
+}
+
+#main-slide .carousel .carousel-item .main-item {
+    position: absolute;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+    margin: 0 250px;
+}
+
+.main-item .main-title h2 {
+    font-weight: bold;
+    line-height: 65px;
+    color: #fff;
+    letter-spacing: 0px;
+}
+
+.main-item .main-text p {
+    line-height: 26px;
+    font-weight: 500;
+}
+
+
+/* Section introduct */
+
+#content #introduce {
+    padding: 100px 0 70px;
+    background-image: url(//theme.hstatic.net/200000388591/1000808625/14/desc1_img.jpg?v=163);
+    background-size: cover;
+    margin: 0 60px;
+}
+
+#content #introduce .introduce-left{
+    width: 50%;
+}
+
+#content #introduce .introduce-left .intro-title img {
+    margin-right: 20px;
+}
+
+#content #introduce .introduce-left .intro-des p {
+    margin: 25px 0;
+    text-align: justify;
+}
+
+#content #introduce .introduce-left .intro-content {
+    margin-top: 60px;
+}
+
+#content #introduce .introduce-left .intro-content .content-item a {
+    color: #ff9a33;
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    text-align: left;
+    background-color: #f0f0f0;
+    padding: 11px 20px;
+    padding-right: 50px;
+    font-weight: bold;
+    position: relative;
+    margin: 20px 0;
+}
+
+#content #introduce .introduce-left .intro-content .content-item a:hover {
+   background-color: #ff9a33;
+   color: #fff;
+}
+
+#content #introduce .introduce-left .intro-content .content-item a img {
+    margin-right: 5px;
+}
+
+#content #introduce .introduce-left .intro-content .content-item a span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50px;
+    text-align: center;
+    line-height: 60px;
+    border-left: solid 1px #e7dada;
+}
+
+#content #introduce .introduce-left .intro-content .content-item a span i {
+    font-size: 18px;
+    transform: rotate(-90deg);
+}
+
+#content #introduce .introduce-left .intro-content .content-item p{
+    text-align: justify;
+}
+
+
+
