@@ -10,6 +10,7 @@
 .active {
     background-color: #ff9a33 !important;
     color: #fff !important;
+    display: block !important;
 }
 /* Header */
 
@@ -33,6 +34,7 @@ a {
 .no-bullet {
     list-style: none;
     margin: 0;
+    padding: 0;
 }
 
 .list-info li {
@@ -199,5 +201,57 @@ a {
     text-align: justify;
 }
 
+#content #introduce .introduce-right .box-content {
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0px 0px 36px -13px rgba(0, 0, 0, 0.75);
+    height: 100%;
+    background-color: #ff9a33;
+}
 
+/* Section services */
+
+#services {
+    margin: 60px;
+}
+
+#services .service-menus .tab-menu {
+    font-size: 14px;
+    background-color: #6666;
+}
+
+#services .service-title {
+    text-align: center;
+    
+}
+
+/* #services .service-title .service-logo {
+
+} */
+#services .service-title h2 {
+    font-size: 36px;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    text-transform: capitalize;
+    color: #ff9a33;
+}
+
+#services .service-menus .tab-menu li {
+    padding: 15px;
+}
+
+/* #services .service-all .tabcontent.active{
+    display: block !important;
+    animation: show_tab 0.5s;
+    padding-top: 0;
+    opacity: 1;
+} */
+
+#services .service-all .tabcontent{
+    display: block;
+    opacity: 1;
+    animation: hide_tab 0.5s;
+}
 

@@ -12,10 +12,28 @@
     a.toggleClass("active").siblings().slideToggle();
     a.parent().siblings().find('a').removeClass('active').siblings().slideUp();
     // rotate icon
-    // if(a.parent().siblings().find('a').hasClass("active")) {
-    //     alert(123);
-    //     a.children().find("i").css("transform", "rotate(0)");
-    // } else {
-    //     a.children().find("i").removeAttr("style");
-    // }
  });
+
+
+
+//  Handle tab menus
+
+var tabButton = $('.tablinks');
+var tabContent = $('.tabcontent');
+console.log(tabButton);
+console.log(tabContent);
+// Set default 
+tabButton[0].addClass('active');
+tabContent[0].addClass('active');
+
+function showtab(e, x) {
+	e.preventDefault();
+   console.log(tabContent[i]);
+	for (var i = 0; i < tabButton.length; i++) {
+      tabContent[i].removeClass('active');
+      tabButton[i].removeClass('active');
+	}
+	// document.getElementById(x).classList.add('active');
+   $('#'+x).addClass('active');
+	e.currentTarget.parentElement.classList.add('active');
+}
