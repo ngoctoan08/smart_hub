@@ -224,18 +224,21 @@ a {
 
 #services .service-title {
     text-align: center;
-    
 }
 
-/* #services .service-title .service-logo {
+.section-title {
+    text-align: center;
+}
 
-} */
-#services .service-title h2 {
+.section-title h2 {
     font-size: 36px;
     font-weight: bold;
     display: inline-block;
     position: relative;
     text-transform: capitalize;
+}
+
+#services .service-title h2 {
     color: #ff9a33;
 }
 
@@ -321,6 +324,96 @@ a {
 /* Feedback */
 
 #feedback {
-    background: url("https://theme.hstatic.net/200000388591/1000808625/14/blog1_img_bg_1.jpg?v=163") no-repeat center;
+    position: relative;
+}
+
+#feedback .feedback-img {
+    position: relative;
+    z-index: 1;
+}
+
+#feedback .feedback-img img {
+    width: 100%;
+}
+
+#feedback .feedback-container {
+    position: absolute;
+    z-index: 3;
+    top: 60px;
+    left: 0;
+    right: 0;
+}
+
+#feedback .feedback-container .feedback-title h2{
+    color: #fff;
+}
+
+#feedback .feedback-container .feedback-content .feedback-content-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 60px;
+}
+
+#feedback .feedback-container .feedback-content .feedback-content-container .item {
+    width: 30%;
+    text-align: center;
+    position: relative;
+    border: 2px solid rgba(255, 255, 255, 0.49);
+    padding: 0px 20px;
+    color: #fff;
+    margin-top: 60px;
+}
+
+#feedback .feedback-container .feedback-content .feedback-content-container .item-img {
+    display: inline-block;
+    position: absolute;
+    top: -16%;
+    z-index: 9999999999999;
+    left: 37%;
+}
+
+
+#feedback .feedback-container .feedback-content .feedback-content-container .item-img img {
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+}
+
+
+#feedback .feedback-container .feedback-content .feedback-content-container .item-content {
+    color: #fff;
+    margin-top: 60px;
+}
+
+#feedback .feedback-container .feedback-content .feedback-content-container .item-content p img {
+    margin-right: 10px;
+}
+
+#feedback .feedback-container .feedback-content .feedback-content-container .item-info {
+    margin: 20px 0;
+}
+
+
+/* Silde logo section */
+
+
+#slide-logo {
+    margin: 0 60px;
+    margin-top: 80px;
+}
+
+#slide-logo .slide-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#slide-logo .slide-container .item a  {
+    display: inline-block;
+}
+
+#slide-logo .slide-container .item img  {
     display: block;
+    width: 100%;
 }
