@@ -11,6 +11,8 @@
     <!-- CSS -->
         <!-- Boostrap -->
     <link rel="stylesheet" href="./public/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+		<!-- Swiper -->
+	<link rel="stylesheet" href="./public/swiper/css/swiper-bundle.min.css">
         <!-- Main CSS -->
     <link rel="stylesheet" href="./public/css/main.css">
 	
@@ -24,9 +26,9 @@
     <div id="wrapper">
         <header id="header container-fluid d-flex">
 			<section id="header_top">
-				<div class="header_top_all d-flex justify-content-between align-items-center">
+				<div class="header_top_all">
 					<div class="info_shop">
-						<ul class="list-info no-bullet d-flex justify-content-center align-items-center">
+						<ul class="list-info no-bullet">
 							<li>
 								<a href="tel:+84(0)888112029">
 									<i class="fas fa-phone"></i>+84(0)888112029
@@ -51,13 +53,15 @@
 				
 			</section>
 			<section id="header_bottom">
-				<div class="header_bottom_all d-flex justify-content-between">
-					<div class="header_bottom_left d-flex justify-content-between align-items-center">
+				<div class="header_bottom_all">
+					<div class="header_bottom_left">
 						<div class="logo">
-							<img src="https://theme.hstatic.net/200000388591/1000808625/14/logo_menu.png?v=163" alt="Xuat khau thong minh" width="100px">
+							<a href="#">
+								<img src="https://theme.hstatic.net/200000388591/1000808625/14/logo_menu.png?v=163" alt="Xuat khau thong minh" width="100px">
+							</a>
 						</div>
 						<div class="menu_left">
-							<ul class="list-info no-bullet d-flex justify-content-center align-items-center">
+							<ul class="list-info no-bullet">
 								<li>
 									<a href="#">Trang Chủ</a>
 								</li>
@@ -81,7 +85,7 @@
 							<img src="https://theme.hstatic.net/200000388591/1000808625/14/vn-rs.png?v=163" alt="">
 							<img src="https://theme.hstatic.net/200000388591/1000808625/14/end-rs.png?v=163" alt="">
 						</div>
-						<ul class="d-flex no-bullet align-items-center">
+						<ul class="no-bullet">
 							<li class="li_search">
 								<a href="#" class="show_search"> <span> <i class="fas fa-search"></i> </span></a>
 							</li>
@@ -527,14 +531,227 @@
 							</div>
 						</div>
 					</div>
-					<!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Previous</span>
-					</button>
-					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Next</span>
-					</button> -->
+				</div>
+			</section>
+
+			<!-- Tin tức mới -->
+			<section id="news">
+				<div class="news-container"> 
+					<div class="section-title news-title">
+						<div class="title_img">
+							<img src="//theme.hstatic.net/200000388591/1000808625/14/blog_new_img.png?v=163" alt="icon blog">
+						</div>
+						<h2>Tin tức mới</h2>
+					</div>
+					<div class="swiper mySwiper-news">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide news-item">
+								<div class="item-img">
+									<a href="#">
+										<img src="https://file.hstatic.net/200000388591/article/final_4_4d26264570104230a7cda4adc6ce086f_large.png" alt="TỔNG QUAN XUẤT KHẨU TRỰC TUYẾN VIỆT NAM 2022">
+									</a>
+								</div>
+								<div class="item-info">
+									<div class="item-info-title">
+										<h4>
+											<a href="/blogs/news/tong-quan-xuat-khau-truc-tuyen-viet-nam-2022">TỔNG QUAN XUẤT KHẨU TRỰC TUYẾN VIỆT NAM 2022</a>
+										</h4>
+									</div>
+									<div class="item-info-content">
+										<!-- <p>TIN VẮN XUẤT KHẨU THÔNG MINH 07.09</p> -->
+										<p>&nbsp;Xuất khẩu trực tuyến là hình thức xuất khẩu thông minh qua các sàn thương mại điện tử toàn cầu như Alibaba, Amazon,... Khi tham gia, doanh nghiệp xuất khẩu sẽ được kết nối, tìm kiếm khách hàn...</p>
+									</div>
+									<div class="item-info-comment">
+										<div class="date"><i class="fas fa-calendar-alt"></i> 07/09/22</div>
+										<div class="comment">
+											<i class="far fa-comment"></i>
+											<span class="fb-comments-count fb_comments_count_zero_fluid_desktop" data-href="https://smarthub.com.vn" fb-xfbml-state="parsed" fb-iframe-plugin-query="app_id=&amp;container_width=0&amp;count=true&amp;height=100&amp;href=https%3A%2F%2Fsmarthub.com.vn%2F&amp;locale=vi_VN&amp;sdk=joey&amp;version=v2.11&amp;width=550"><span class="fb_comments_count">0</span></span>
+										</div>
+									</div>
+									<div class="item-info-btn">
+										<a class="read_more" href="/blogs/news/tin-van-xuat-khau-thong-minh-07-09">Xem thêm<i class="fas fa-angle-double-right"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide news-item">
+								<div class="item-img">
+									<a href="#">
+										<img src="https://file.hstatic.net/200000388591/article/305628761_471588444979721_1437187779369894651_n_2153741a74dd407abba78556a13717d1_large.jpeg">
+									</a>
+								</div>
+								<div class="item-info">
+									<div class="item-info-title">
+										<h4>
+											<a href="/blogs/news/tong-quan-xuat-khau-truc-tuyen-viet-nam-2022">TỔNG QUAN XUẤT KHẨU TRỰC TUYẾN VIỆT NAM 2022</a>
+										</h4>
+									</div>
+									<div class="item-info-content">
+										<!-- <p>TIN VẮN XUẤT KHẨU THÔNG MINH 07.09</p> -->
+										<p>&nbsp;Xuất khẩu trực tuyến là hình thức xuất khẩu thông minh qua các sàn thương mại điện tử toàn cầu như Alibaba, Amazon,... Khi tham gia, doanh nghiệp xuất khẩu sẽ được kết nối, tìm kiếm khách hàn...</p>
+									</div>
+									<div class="item-info-comment">
+										<div class="date"><i class="fas fa-calendar-alt"></i> 07/09/22</div>
+										<div class="comment">
+											<i class="far fa-comment"></i>
+											<span class="fb-comments-count fb_comments_count_zero_fluid_desktop" data-href="https://smarthub.com.vn" fb-xfbml-state="parsed" fb-iframe-plugin-query="app_id=&amp;container_width=0&amp;count=true&amp;height=100&amp;href=https%3A%2F%2Fsmarthub.com.vn%2F&amp;locale=vi_VN&amp;sdk=joey&amp;version=v2.11&amp;width=550"><span class="fb_comments_count">0</span></span>
+										</div>
+									</div>
+									<div class="item-info-btn">
+										<a class="read_more" href="/blogs/news/tin-van-xuat-khau-thong-minh-07-09">Xem thêm<i class="fas fa-angle-double-right"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide news-item">
+								<div class="item-img">
+									<a href="#">
+										<img src="https://file.hstatic.net/200000388591/article/tin_van_04.02.2023_94f834a446a642e7ba29402e719cd1e8_large.png">
+									</a>
+								</div>
+								<div class="item-info">
+									<div class="item-info-title">
+										<h4>
+											<a href="/blogs/news/tong-quan-xuat-khau-truc-tuyen-viet-nam-2022">TỔNG QUAN XUẤT KHẨU TRỰC TUYẾN VIỆT NAM 2022</a>
+										</h4>
+									</div>
+									<div class="item-info-content">
+										<!-- <p>TIN VẮN XUẤT KHẨU THÔNG MINH 07.09</p> -->
+										<p>&nbsp;Xuất khẩu trực tuyến là hình thức xuất khẩu thông minh qua các sàn thương mại điện tử toàn cầu như Alibaba, Amazon,... Khi tham gia, doanh nghiệp xuất khẩu sẽ được kết nối, tìm kiếm khách hàn...</p>
+									</div>
+									<div class="item-info-comment">
+										<div class="date"><i class="fas fa-calendar-alt"></i> 07/09/22</div>
+										<div class="comment">
+											<i class="far fa-comment"></i>
+											<span class="fb-comments-count fb_comments_count_zero_fluid_desktop" data-href="https://smarthub.com.vn" fb-xfbml-state="parsed" fb-iframe-plugin-query="app_id=&amp;container_width=0&amp;count=true&amp;height=100&amp;href=https%3A%2F%2Fsmarthub.com.vn%2F&amp;locale=vi_VN&amp;sdk=joey&amp;version=v2.11&amp;width=550"><span class="fb_comments_count">0</span></span>
+										</div>
+									</div>
+									<div class="item-info-btn">
+										<a class="read_more" href="/blogs/news/tin-van-xuat-khau-thong-minh-07-09">Xem thêm<i class="fas fa-angle-double-right"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide news-item">
+								<div class="item-img">
+									<a href="#">
+										<img src="https://file.hstatic.net/200000388591/article/final_4_4d26264570104230a7cda4adc6ce086f_large.png" alt="TỔNG QUAN XUẤT KHẨU TRỰC TUYẾN VIỆT NAM 2022">
+									</a>
+								</div>
+								<div class="item-info">
+									<div class="item-info-title">
+										<h4>
+											<a href="/blogs/news/tong-quan-xuat-khau-truc-tuyen-viet-nam-2022">TỔNG QUAN XUẤT KHẨU TRỰC TUYẾN VIỆT NAM 2022</a>
+										</h4>
+									</div>
+									<div class="item-info-content">
+										<!-- <p>TIN VẮN XUẤT KHẨU THÔNG MINH 07.09</p> -->
+										<p>&nbsp;Xuất khẩu trực tuyến là hình thức xuất khẩu thông minh qua các sàn thương mại điện tử toàn cầu như Alibaba, Amazon,... Khi tham gia, doanh nghiệp xuất khẩu sẽ được kết nối, tìm kiếm khách hàn...</p>
+									</div>
+									<div class="item-info-comment">
+										<div class="date"><i class="fas fa-calendar-alt"></i> 07/09/22</div>
+										<div class="comment">
+											<i class="far fa-comment"></i>
+											<span class="fb-comments-count fb_comments_count_zero_fluid_desktop" data-href="https://smarthub.com.vn" fb-xfbml-state="parsed" fb-iframe-plugin-query="app_id=&amp;container_width=0&amp;count=true&amp;height=100&amp;href=https%3A%2F%2Fsmarthub.com.vn%2F&amp;locale=vi_VN&amp;sdk=joey&amp;version=v2.11&amp;width=550"><span class="fb_comments_count">0</span></span>
+										</div>
+									</div>
+									<div class="item-info-btn">
+										<a class="read_more" href="/blogs/news/tin-van-xuat-khau-thong-minh-07-09">Xem thêm<i class="fas fa-angle-double-right"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide news-item">
+								<div class="item-img">
+									<a href="#">
+										<img src="https://file.hstatic.net/200000388591/article/305628761_471588444979721_1437187779369894651_n_2153741a74dd407abba78556a13717d1_large.jpeg">
+									</a>
+								</div>
+								<div class="item-info">
+									<div class="item-info-title">
+										<h4>
+											<a href="/blogs/news/tin-van-xuat-khau-thong-minh-07-09">TIN VẮN XUẤT KHẨU THÔNG MINH 07.09</a>
+										</h4>
+									</div>
+									<div class="item-info-content">
+										<!-- <p>TIN VẮN XUẤT KHẨU THÔNG MINH 07.09</p> -->
+										<p>&nbsp;Xuất khẩu trực tuyến là hình thức xuất khẩu thông minh qua các sàn thương mại điện tử toàn cầu như Alibaba, Amazon,... Khi tham gia, doanh nghiệp xuất khẩu sẽ được kết nối, tìm kiếm khách hàn...</p>
+									</div>
+									<div class="item-info-comment">
+										<div class="date"><i class="fas fa-calendar-alt"></i> 07/09/22</div>
+										<div class="comment">
+											<i class="far fa-comment"></i>
+											<span class="fb-comments-count fb_comments_count_zero_fluid_desktop" data-href="https://smarthub.com.vn" fb-xfbml-state="parsed" fb-iframe-plugin-query="app_id=&amp;container_width=0&amp;count=true&amp;height=100&amp;href=https%3A%2F%2Fsmarthub.com.vn%2F&amp;locale=vi_VN&amp;sdk=joey&amp;version=v2.11&amp;width=550"><span class="fb_comments_count">0</span></span>
+										</div>
+									</div>
+									<div class="item-info-btn">
+										<a class="read_more" href="/blogs/news/tin-van-xuat-khau-thong-minh-07-09">Xem thêm<i class="fas fa-angle-double-right"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide news-item">
+								<div class="item-img">
+									<a href="#">
+										<img src="https://file.hstatic.net/200000388591/article/final_4_4d26264570104230a7cda4adc6ce086f_large.png" alt="TỔNG QUAN XUẤT KHẨU TRỰC TUYẾN VIỆT NAM 2022">
+									</a>
+								</div>
+								<div class="item-info">
+									<div class="item-info-title">
+										<h4>
+											<a href="/blogs/news/tong-quan-xuat-khau-truc-tuyen-viet-nam-2022">TỔNG QUAN XUẤT KHẨU TRỰC TUYẾN VIỆT NAM 2022</a>
+										</h4>
+									</div>
+									<div class="item-info-content">
+										<!-- <p>TIN VẮN XUẤT KHẨU THÔNG MINH 07.09</p> -->
+										<p>&nbsp;Xuất khẩu trực tuyến là hình thức xuất khẩu thông minh qua các sàn thương mại điện tử toàn cầu như Alibaba, Amazon,... Khi tham gia, doanh nghiệp xuất khẩu sẽ được kết nối, tìm kiếm khách hàn...</p>
+									</div>
+									<div class="item-info-comment">
+										<div class="date"><i class="fas fa-calendar-alt"></i> 07/09/22</div>
+										<div class="comment">
+											<i class="far fa-comment"></i>
+											<span class="fb-comments-count fb_comments_count_zero_fluid_desktop" data-href="https://smarthub.com.vn" fb-xfbml-state="parsed" fb-iframe-plugin-query="app_id=&amp;container_width=0&amp;count=true&amp;height=100&amp;href=https%3A%2F%2Fsmarthub.com.vn%2F&amp;locale=vi_VN&amp;sdk=joey&amp;version=v2.11&amp;width=550"><span class="fb_comments_count">0</span></span>
+										</div>
+									</div>
+									<div class="item-info-btn">
+										<a class="read_more" href="/blogs/news/tin-van-xuat-khau-thong-minh-07-09">Xem thêm<i class="fas fa-angle-double-right"></i></a>
+									</div>
+								</div>
+							</div>
+						  </div>
+					</div>
+				</div>
+				
+			</section>
+
+			<!-- Giải pháp thông minh xuyên biên giới -->
+			<section id="home-describe">
+				<div class="background-img home-describe-img">
+					<img src="https://theme.hstatic.net/200000388591/1000808625/14/call_action_bg.jpg?v=163" alt="">
+				</div>
+				<div class="homedes-container">
+					<div class="row homedes-container-content">
+						<div class="col-5 homedes-left">
+							<div class="homedes-title">
+								<h3>GIẢI PHÁP THÔNG MINH CHO THƯƠNG MẠI ĐIỆN TỬ XUYÊN BIÊN GIỚI</h3>
+							</div>
+
+							<div class="homedes-content">
+								<p>Chúng tôi có khát vọng đưa sản phẩm của doanh nghiệp Việt Nam tiếp cận khách hàng toàn cầu thông qua thương mại điện tử bằng phương thức thông minh hơn và giá trị cao hơn!</p>
+							</div>
+						</div>
+						<div class="col-5 homedes-right">
+							<div class="homedes-btn">
+								<a href="https://smarthub.com.vn/pages/about-us" class="describe2_content_img">
+									<img src="https://theme.hstatic.net/200000388591/1000808625/14/call_action_img1.png?v=163" alt="Tell Friend">
+									<h4>Chia sẻ</h4>
+								</a>
+								<a href="https://smarthub.com.vn/blogs/news" class="describe2_content_img">
+									<img src="https://theme.hstatic.net/200000388591/1000808625/14/call_action_img2.png?v=163" alt="Read More">
+									<h4>Đọc thêm</h4>
+								</a>
+								<a href="https://smarthub.com.vn/blogs/lien-he/thong-tin-lien-he-cong-dong-xuat-khau-thong-minh-smart-hub" class="describe2_content_img">
+									<img src="https://theme.hstatic.net/200000388591/1000808625/14/call_action_img3.png?v=163" alt="Contact Us">
+									<h4>Liên hệ</h4>
+								</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 		</div>
@@ -544,9 +761,43 @@
     </div>
 
 	<!-- JS -->
+
+	<!-- Boostrap 5.0.2 -->
     <script src="./public/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <script src="./public/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+	
+	<!-- Jquery 3.6.4 -->
 	<script src="./public/js/jquery-3.6.4.min.js"></script>
+
+	<!-- Swiper -->
+	<script src="./public/swiper/js/swiper-bundle.min.js"></script>
+
+	<!-- Main JS -->
 	<script src="./public/js/main.js"></script>
+
+	  <!-- Initialize Swiper -->
+	  <script>
+		var swiper = new Swiper(".mySwiper-news", {
+			breakpoints: {
+				320: {
+				slidesPerView: 1,
+				spaceBetween: 20
+				},
+				767: {
+				slidesPerView: 3,
+				spaceBetween: 30
+				}
+			},
+			loop: true,
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+			autoplay: {
+				delay: 2500,
+				disableOnInteraction: false,
+			},
+		});
+	  </script>
 </body>
 </html>
