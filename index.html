@@ -90,7 +90,7 @@
 								<a href="#" class="show_search"> <span> <i class="fas fa-search"></i> </span></a>
 							</li>
 							<li class="li_button">
-								<a href="#" class="button_all"> Đặt lịch hẹn</a>
+								<a href="#" class="button_all" data-bs-toggle="modal" data-bs-target="#appointment">Đặt lịch hẹn</a>
 							</li>
 						</ul>
 					</div>
@@ -755,6 +755,7 @@
 				</div>
 			</section>
 		</div>
+		<!-- Footer -->
 		<footer id="footer">
 			<section id="footer-top" class="">
 				<div class="footer-item">
@@ -798,7 +799,30 @@
 			<section id="footer-bottom">
 				<div class="footer-item">
 					<div class="footer-item-title">
-						<img src="//theme.hstatic.net/200000388591/1000808625/14/policy_img1.png?v=163" alt="icon">
+						<h3>Về chúng tôi</h3>
+					</div>
+					<div class="footer-item-content">
+						<p>	Công ty Cổ phần Smart Hub thúc đẩy Sản Phẩm và Thương Hiệu Việt Nam ra Toàn cầu Thông minh hơn - Giá trị cao hơn. <br> - Từ địa phương ra Toàn cầu<br> - Từ "nhãn trắng" đến thương hiệu riêng<br> - Từ truyền thống đến chuyển đổi số<br> -  Từ đơn kênh đến quản trị đa kênh	</p>
+						<h4></h4>
+					</div>
+				</div>
+				<div class="footer-item">
+					<div class="footer-item-title">
+						<h3>Liên kết hữu ích</h3>
+					</div>
+					<div class="footer-item-content">
+						<ul class="no-bullet">
+							<li><a href="index.html">Trang chủ</a></li>
+							<li><a href="about-us.html">Giới thiệu</a></li>
+							<li><a href="services.html">Dịch vụ</a></li>
+							<li><a href="information.html">Thông tin</a></li>
+							<li><a href="contact.html">Liên hệ</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-item">
+					<div class="footer-item-title">
+						<h3>Tin mới nhất</h3>
 					</div>
 					<div class="footer-item-content">
 						<p></p>
@@ -807,34 +831,58 @@
 				</div>
 				<div class="footer-item">
 					<div class="footer-item-title">
-						<img src="//theme.hstatic.net/200000388591/1000808625/14/policy_img2.png?v=163" alt="icon">
+						<h3>Theo dõi bản tin</h3>
 					</div>
 					<div class="footer-item-content">
-						<p>số 45 đường Tô Ngọc Vân, P. Quảng An,
-							Q. Tây Hồ, Tp. Hà Nội, Việt Nam</p>
-						<h4>Westlake Residence 9</h4>
+						<p>Đăng ký ngay để có thể nhận được nhiều ưu đãi mới nhất từ chúng tôi</p>
+						<input type="email" placeholder="Địa chỉ email của bạn ...">
+						<button type="button"> <img src="https://theme.hstatic.net/200000388591/1000808625/14/register_send.png?v=163" alt=""></button>
+						<!-- <h4>Thứ: 2 - 6 , Giờ: 8:00 - 17:30</h4> -->
 					</div>
 				</div>
-				<div class="footer-item">
-					<div class="footer-item-title">
-						<img src="//theme.hstatic.net/200000388591/1000808625/14/policy_img3.png?v=163" alt="icon">
+			</section>
+			<section id="footer-copyright">
+				<div class="footer-copyrights-content">
+					<div class="txt_copyright">
+						<p>© Copyright by SmartHub JSC,.2021</p>
 					</div>
-					<div class="footer-item-content">
-						<p>Liên hệ 24/7</p>
-						<h4>+84(0)888112029</h4>
-					</div>
-				</div>
-				<div class="footer-item">
-					<div class="footer-item-title">
-						<img src="//theme.hstatic.net/200000388591/1000808625/14/policy_img4.png?v=163" alt="icon">
-					</div>
-					<div class="footer-item-content">
-						<p>Giờ Mở Cửa</p>
-						<h4>Thứ: 2 - 6 , Giờ: 8:00 - 17:30</h4>
+					<div class="img_copyright">
+						<img src="//theme.hstatic.net/200000388591/1000808625/14/copyright_bank.png?v=163" alt="icon">
 					</div>
 				</div>
 			</section>
 		</footer>
+
+		<!-- Modal -->
+		<!-- Button trigger modal -->
+		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+			Launch static backdrop modal
+		</button>
+		
+		<!-- Modal -->
+		<div class="modal fade" id="appointment" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+			<div class="modal-dialog modal-container">
+				<div class="modal-content">
+					<div class="modal-header">
+						<!-- <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5> -->
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>	
+					</div>
+					<div class="modal-body">
+						<div class="modal-img">
+							<img src="https://theme.hstatic.net/200000388591/1000808625/14/use_form_img.jpg?v=163" alt="image banner">
+						</div>
+						<div class="modal-form">
+							<h3>Đăng ký nhận thông tin</h3>
+							<div class="form-content">
+								<form action="" method="post">
+									
+								</form>
+							</div>
+						</div>
+					</div>
+			</div>
+			</div>
+		</div>
     </div>
 
 	<!-- JS -->
