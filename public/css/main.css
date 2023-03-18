@@ -739,20 +739,64 @@ a {
     max-width: 800px;
 }
 
+.modal-container .modal-content .modal-title {
+    text-transform: uppercase;
+    color: #ff9a33;
+    font-weight: 600;
+}
 .modal-container .modal-body {
     padding: 0px;
+    display: flex;
 }
 
 .modal-container .modal-img {
-    display: inline-block;
+    /* display: inline-block; */
     width: 35%;
 }
 .modal-container .modal-img img {
     width: 100%;
 }
 
-.modal-container .modal-img .modal-form {
+
+.modal-container .modal-body .modal-form {
     width: 65%;
-    display: inline-block;
     background-color: #ff9a33;
+
+}
+
+.modal-container .modal-body .modal-form .form-content {
+    padding: 20px;
+}
+
+.modal-container .modal-body .modal-form .row >* {
+    padding: 0px;
+}
+.modal-container .modal-body .modal-form .form-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.modal-container .modal-body .modal-form .form-group .form-sub-group {
+    width: 48%;
+}
+
+.modal-container .modal-body .modal-form .form-group .form-label {
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.modal-container .modal-body .modal-form .form-group .form-control {
+    padding: 0px;
+}
+.modal-container .modal-body .modal-form .form-group .form-control input,
+.modal-container .modal-body .modal-form .form-group .form-control textarea{
+    background-color: transparent;
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    color: #fff;
+    padding: 10px;
+    display: block;
+    width: 100%;
 }

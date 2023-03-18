@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Hub</title>
     <!-- Logo -->
-    <!-- <link rel="shortcut icon" href="//theme.hstatic.net/200000388591/1000808625/14/logo_favicon.png?v=163" type="image/png" /> -->
+    <link rel="shortcut icon" href="//theme.hstatic.net/200000388591/1000808625/14/logo_favicon.png?v=163" type="image/png" />
     
     <!-- CSS -->
         <!-- Boostrap -->
@@ -24,7 +24,7 @@
 </head>
 <body>
     <div id="wrapper">
-        <header id="header container-fluid d-flex">
+        <header id="header">
 			<section id="header_top">
 				<div class="header_top_all">
 					<div class="info_shop">
@@ -428,7 +428,6 @@
 						<div class="wrapper">
 
 							<div class="feedback-content-container">
-									
 								<div class="item">
 									<div class="item-img">
 										<img src="//file.hstatic.net/200000388591/article/linh-pham-yourwwva-va-unsplash_146cdec5c8f4433ba3f0ad7d9ca14096_small.jpg" alt="CEO Linh Phạm - Vie Furniture">
@@ -852,19 +851,13 @@
 				</div>
 			</section>
 		</footer>
-
-		<!-- Modal -->
-		<!-- Button trigger modal -->
-		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-			Launch static backdrop modal
-		</button>
 		
 		<!-- Modal -->
 		<div class="modal fade" id="appointment" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
 			<div class="modal-dialog modal-container">
 				<div class="modal-content">
 					<div class="modal-header">
-						<!-- <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5> -->
+						<h5 class="modal-title" id="staticBackdropLabel">Đăng ký nhận thông tin</h5>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>	
 					</div>
 					<div class="modal-body">
@@ -872,10 +865,43 @@
 							<img src="https://theme.hstatic.net/200000388591/1000808625/14/use_form_img.jpg?v=163" alt="image banner">
 						</div>
 						<div class="modal-form">
-							<h3>Đăng ký nhận thông tin</h3>
 							<div class="form-content">
 								<form action="" method="post">
-									
+									<div class="row form-group">
+										<div class="form-sub-group">
+											<div class="form-label">
+												<label for="name">Họ và tên</label>
+											</div>
+											<div class="form-control">
+												<input type="text" name="name" id="name" placeholder="Họ và tên">
+											</div>
+										</div>
+										<div class="form-sub-group">
+											<div class="form-label">
+												<label for="email">Email</label>
+											</div>
+											<div class="form-control">
+												<input type="email" name="email" id="email" placeholder="Email">
+											</div>
+										</div>
+									</div>
+									<div class="row form-group">
+										<div class="form-label">
+											<label for="phone">Số điện thoại</label>
+										</div>
+										<div class="form-control">
+											<input type="tel" name="phone" id="phone" placeholder="Số điện thoại">
+										</div>
+									</div>
+
+									<div class="row form-group">
+										<div class="form-label">
+											<label for="connect">Nhu cầu kết các hợp tác</label>
+										</div>
+										<div class="form-control">
+											<textarea name="connect" id="connect" cols="30" rows="5"></textarea>
+										</div>
+									</div>
 								</form>
 							</div>
 						</div>
