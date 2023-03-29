@@ -109,6 +109,10 @@ a {
     margin-right: 100px;
 }
 
+.header_bottom_left .logo a img {
+    border-radius: 20%;
+}
+
 .header_bottom_right ul .li_search a span i {
     font-size: 20px;
 }
@@ -173,11 +177,11 @@ a {
 }
 
 
-/* Section introduct */
+/* Section introduce */
 
 #content #introduce {
     padding: 100px 0 70px;
-    background-image: url(//theme.hstatic.net/200000388591/1000808625/14/desc1_img.jpg?v=163);
+    background-image: url(../images/banner/desc1_img.jpg);
     background-size: cover;
     margin: 0 60px;
 }
@@ -827,7 +831,7 @@ a {
     margin-bottom: 50px;
     border-bottom: solid 1px #e4e4e4;
     background-color: #f6f6f6;
-    background-image: url(http://file.hstatic.net/1000355186/file/page-title.jpg);
+    background-image: url(../images/banner/page-title.webp);
     background-attachment: fixed;
     background-position: top;
     background-repeat: no-repeat;
@@ -870,7 +874,9 @@ a {
     align-items: center;
     justify-content: center;
 }
-
+#content .content-container p img {
+    width: 90%;
+}
 #content .content-title {
     font-weight: 600;
     color: #666;
