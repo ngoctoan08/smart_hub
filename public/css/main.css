@@ -16,8 +16,8 @@
 /* Header */
 
 header {
-    position: absolute;
-    z-index: 1;
+    /* position: absolute; */
+    /* z-index: 1; */
     width: 100%;
     height: auto;
 }
@@ -186,18 +186,18 @@ a {
     margin: 0 60px;
 }
 
-#content #introduce .introduce-left{
-    width: 50%;
-    margin-right: 50px;
-}
-
 #content #introduce .introduce-left .intro-title img {
     margin-right: 20px;
 }
 
+#content #introduce .introduce-left .intro-title h2 {
+    text-align: center;
+}
 #content #introduce .introduce-left .intro-des p {
     margin: 25px 0;
     text-align: justify;
+    font-size: 18px;
+    line-height: 1.7;
 }
 
 #content #introduce .introduce-left .intro-content {
@@ -259,11 +259,11 @@ a {
 
 /* Section services */
 
-#services {
-    margin: 60px;
+.services {
+    margin: 30px;
 }
 
-#services .service-menus .tab-menu {
+.services .service-menus .tab-menu {
     display: flex;
     background-color: #f2f2f2;
     justify-content: space-around;
@@ -271,7 +271,7 @@ a {
     font-size: 14px;
 }
 
-#services .service-title {
+.services .service-title {
     text-align: center;
 }
 
@@ -287,37 +287,51 @@ a {
     text-transform: capitalize;
 }
 
-#services .service-title h2 {
+.services .service-title h2 {
     color: #ff9a33;
 }
 
-#services .service-menus .tab-menu li {
+.services .service-menus .tab-menu li {
     padding: 15px;
 }
 
-#services .service-menus .tab-menu li a { 
+.services .service-menus .tab-menu li a { 
     color: #ff9a33;
     padding: 20px 0;
+    font-size: 20px;
 }
 
-/* #services .service-all .tabcontent.active{
+/* .services .service-all .tabcontent.active{
     display: block !important;
     animation: show_tab 0.5s;
     padding-top: 0;
     opacity: 1;
 } */
 
-#services .service-all .tabcontent{
+.services .service-all .tabcontent
+.services .service-all .tabcontent1{
     display: block;
     opacity: 1;
     animation: hide_tab 0.5s;
 }
 
-#services .service-all .tabcontent .service_item .service_img img{
+.services .service-all .tabcontent .text-content,
+.services .service-all .tabcontent .text-content1 {
+    margin-top: 20px;
+}
+
+.services .service-a.ll .tabcontent p, 
+.services .service-a.ll .tabcontent1 p{
+    font-size: 18px;
+    line-height: 1.7;
+    /* margin-top: 30px; */
+}
+.services .service-all .tabcontent1 .service_item .service_img img{
     width: 100%;
 }
 
-#services .service-menus .tablinks:hover {
+.services .service-menus .tablinks:hover,
+.services .service-menus .tablinks1:hover {
     /* border-bottom: #ff9a33; */
     border-bottom: 2px solid #ff9a33;
 }
@@ -873,7 +887,10 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-size: 18px;
+    line-height: 1.7;
 }
+
 #content .content-container p img {
     width: 90%;
 }
@@ -882,6 +899,10 @@ a {
     color: #666;
     font-size: 36px;
 } 
+
+#content .content-box{
+    margin: 15px 30px;
+}
 
 /* End Service page */
 

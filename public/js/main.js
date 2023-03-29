@@ -31,3 +31,18 @@ function showtab(e, tabName) {
     $('#' + tabName).css("display", "block");
     e.currentTarget.parentElement.className += " active";
 }
+
+function showtab1(e, tabName) {
+    e.preventDefault();
+    var tabButton = $('.tablinks1');
+    var tabContent = $('.tabcontent1');
+    for (var i = 0; i < tabButton.length; i++) {
+        console.log(tabButton[i].className);
+        tabButton[i].className = tabButton[i].className.replace(" active", "");
+    }
+    for (var i = 0; i < tabContent.length; i++) {
+        tabContent[i].style.display = "none";
+    }
+    $('#' + tabName).css("display", "block");
+    e.currentTarget.parentElement.className += " active";
+}
