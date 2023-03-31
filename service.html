@@ -79,7 +79,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="header_bottom_right d-flex align-items-center">
+					<!-- <div class="header_bottom_right d-flex align-items-center">
 						<div class="lang">
 							<img src="./public/images/logo/vn-rs.png" alt="">
 							<img src="./public/images/logo/end-rs.png" alt="">
@@ -92,7 +92,7 @@
 								<a href="#" class="button_all" data-bs-toggle="modal" data-bs-target="#appointment">Đặt lịch hẹn</a>
 							</li>
 						</ul>
-					</div>
+					</div> -->
 				</div>
 			</section>
         </header>
@@ -162,80 +162,88 @@
 					</div>
 				</section>
 
-				<section class="services">
+				<div style="width: 100%;" id="introduce">
 					<div class="service-title mb-4 section-title">
-						<h2>Lĩnh vực kinh doanh</h2>
+						<h2 style="color: #ff9a33;;">Lĩnh vực kinh doanh</h2>
 					</div>
-					<div class="service-menus">
-						<ul class="no-bullet tab-menu">
-							<li class="tablinks1 active">
-								<a onclick="showtab1(event,'tab_produc_cont4')" href="#">Sản phẩm từ đồ gỗ, giả gỗ</a>
-							</li>
-							<li class="tablinks1">
-								<a onclick="showtab1(event,'tab_produc_cont5')" href="#">Sản xuất thiết bị điện</a>
-							</li>
-							<li class="tablinks1">
-								<a onclick="showtab1(event,'tab_produc_cont6')" href="#">Sản xuất máy móc, thiết bị văn phòng</a>
-							</li>
-						</ul>
-					</div>
-					<div class="service-all">
-						<div id="tab_produc_cont4" class="tabcontent1">
-							<div class="grid-uniform row">
-								<div class="service_item mt-5 col-4">
-									<a href="#">
-										<div class="service_img">
-											<img src="./public/images/service/dogo.PNG" alt="xưởng gỗ gia đình" >
-										</div>
+					<div class="introduce-left">
+						<div class="intro-all">
+							<div class="intro-content">
+								<div class="content-item">
+									<a class="toggle_a" href="javascript:void(0)">
+										SẢN PHẨM TỪ ĐỒ GỖ, GIẢ GỖ
+										<span><i class="fas fa-sort-down"></i></span>
 									</a>
-								</div>
-								<div class="service_item mt-5 col-4">
-									<a href="/blogs/branding-marketing/tiep-thi-sang-tao">
-										<div class="service_img">
-											<img src="./public/images/service/dogo3.PNG" alt="">
+									<!-- <p style="display: none;"> - Cung cấp sản phẩm đồ nội thất, đồ công nghệ hiện đại, dẫn đầu, góp phần nâng cao chất lượng cuộc sống, đáp ứng kịp thời nhu cầu khách hàng.</p> -->
+									<div style="display: none;" class="">
+										<div class="intro-list-img">
+											<div class="service_item mt-5">
+												<div class="service_img">
+													<img src="./public/images/service/dogo.PNG" alt="xưởng gỗ gia đình">
+												</div>
+											</div>
+											<div class="service_item mt-5">
+												<div class="service_img">
+													<img src="./public/images/service/dogo3.PNG" alt="">
+												</div>
+											</div>
 										</div>
-									</a>
+										
+									</div>
 								</div>
-							</div>
-						</div>
-						<div id="tab_produc_cont5" class="tabcontent1" style="display: none;">
-							<div class="service_item mt-5 col-4">
-								<a href="#">
-									<div class="service_img">
-										<img src="./public/images/service/thietbidien.PNG" >
+								<div class="content-item">
+									<a class="toggle_a" href="javascript:void(0)">
+										SẢN XUẤT THIẾT BỊ ĐIỆN
+										<span><i class="fas fa-sort-down"></i></span>
+									</a>
+									<div style="display: none;" class="">
+										<div class="intro-list-img">
+											<div class="service_item mt-5">
+												<div class="service_img">
+													<img src="./public/images/service/thietbidien.PNG">
+												</div>
+											</div>
+										</div>
 									</div>
-								</a>
-							</div>
-						</div>
-						<div id="tab_produc_cont6" class="tabcontent1" style="display: none;">
-							<div class="service_item mt-5 col-4">
-								<a href="#">
-									<div class="service_img">
-										<img src="./public/images/service/thietbivanphong.PNG" >
+								</div>
+								<div class="content-item">
+									<a class="toggle_a" href="javascript:void(0)">
+										SẢN XUẤT MÁY MÓC,THIẾT BỊ VĂN PHÒNG
+										<span><i class="fas fa-sort-down"></i></span>
+									</a>
+									<div style="display: none;" class="">
+										<div class="intro-list-img">
+											<div class="service_img mt-5">
+												<img src="./public/images/service/thietbivanphong.PNG">
+											</div>
+										</div>
 									</div>
-								</a>
+								</div>
 							</div>
 						</div>
 					</div>
-				</section>
+				</div>
+				
 				
 				<p style="font-size: 18px; line-height: 1.7;">
 					Từ năm 2020 do ảnh hưởng của dịch covid nên công ty đã chuyển  hoàn toàn sang sản xuất và kinh doanh các mặt hàng do chính công ty làm ra. <br>
 					Hiện nay, công ty đang kinh doanh chủ yếu các sản phẩm đồ gỗ, đồ nội thất và các thiết bị điện để phù hợp với thị trường và kinh tế hiện nay. Tất cả sản phẩm đều được sản xuất trên dây truyền máy móc hiện đại, đáp ứng kịp thời nhu cầu của khách hàng. Trong suốt 12 năm phát triển, Công ty là trở thành đối tác cung cấp của nhiều công ty, dự án lớn trong nước như các dự án xây dựng tại trung tâm các huyện, thành phố trên địa bàn thành phố Hà Nội và các tỉnh lân cận
 				</p>
-
-				<div class="service-title mb-4 section-title">
-					<h2 style="color: #ff9a33;;">Thông tin các shop</h2>
+				<div id="info-shop">
+					<div class="service-title mb-4 section-title">
+						<h2 style="color: #ff9a33;;">Thông tin các shop</h2>
+					</div>
+					<p style="text-align: center;">
+						<img src="./public/images/service/shop1.png" alt="">
+					</p>
+					<p style="text-align: center;">
+						<img src="./public/images/service/shop2.png" alt="">
+					</p>
+					<p style="text-align: center;">
+						<img src="./public/images/service/shop3.png" alt="">
+					</p>
 				</div>
-				<p style="text-align: center;">
-					<img src="./public/images/service/shop1.png" alt="">
-				</p>
-				<p style="text-align: center;">
-					<img src="./public/images/service/shop2.png" alt="">
-				</p>
-				<p style="text-align: center;">
-					<img src="./public/images/service/shop3.png" alt="">
-				</p>
+				
             </div>
         </section>
 
