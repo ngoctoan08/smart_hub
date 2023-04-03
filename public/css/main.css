@@ -150,8 +150,8 @@ a {
 }
 
 #main-slide .carousel .carousel-item img {
-    /* background-size: cover;
-    filter: brightness(0.7); */
+    margin-top: 50px;
+    width: 100%;
 }
 
 #main-slide .carousel .carousel-item .main-item {
