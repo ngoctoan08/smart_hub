@@ -260,6 +260,8 @@ a {
 
 #content #introduce .introduce-left .intro-content .content-item .intro-list-img .service_item img {
     width: 100%;
+    /* max-width: 300px; */
+    /* width: 300px; */
 }
 #content #introduce .introduce-right .box-content {
     padding: 20px;
